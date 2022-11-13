@@ -1,0 +1,220 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  --dark-color: #533E85;
+  --light-color: #EEEEEE;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+/* Layout */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  /* max-width: 26.62em; */
+  max-width: 22em;
+}
+
+form>* {
+  box-sizing: border-box;
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 0.64em;
+}
+
+input[type=email],
+input#password {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.666em 0.833em;
+  /* padding: 0.482em; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.pass-container {
+  position: relative;
+}
+
+.pass-container i {
+  position: absolute;
+  top: 1.05em;
+  right: 1em;
+  cursor: pointer;
+}
+
+/* .pass-container img {
+  height: 1.44em;
+  width: 1.35em;
+  position: absolute;
+  top: 0.9em;
+  right: 1em;
+  cursor: pointer;
+} */
+
+.signin-btn {
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  padding: 0.555em 0.694em;
+  cursor: pointer;
+}
+
+.forgot-pass,
+.no-account-text {
+  text-align: center;
+}
+
+.forgot-pass {
+  /* margin-top: 0.482em; */
+  margin-top: 1.25em;
+}
+
+.no-account-text {
+  /* margin-top: 2.074em; */
+  margin-top: 3.052em;
+  /* margin-bottom: 0.694em; */
+  margin-bottom: 0.8em;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 0.555em 0.694em;
+}
+
+/* Type */
+body {
+  font-size: calc(12px + 0.5vw);
+}
+
+h1 {
+  font-size: 2.488em;
+  font-weight: 400;
+}
+
+.signin-btn {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.forgot-pass {
+  font-size: 0.833em;
+}
+
+.no-account-text {
+  font-size: 1em;
+}
+
+.btn {
+  font-size: 1.2em;
+}
+
+input[type=email],
+input#password {
+  /* font-size: 1.44em; */
+  font-size: 1.2em;
+}
+
+@media (min-width: 2400px) {
+  body {
+    font-size: calc(12px + 1vw);
+  }
+}
+
+/* Color */
+body {
+  color: var(--dark-color);
+}
+
+.container {
+  background-color: var(--light-color);
+}
+
+.card {
+  background-color: var(--card-color);
+  filter: drop-shadow(0 0 10px var(--shadow));
+}
+
+input[type=email],
+input#password {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+input[type=email]:hover,
+input#password:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type=email]:focus,
+input#password:focus {
+  background-color: #fff;
+  outline: none;
+  border: 1px solid var(--dark-color);
+}
+
+.signin-btn {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  opacity: 95%;
+}
+
+.signin-btn:hover {
+  opacity: 100%;
+}
+
+.forgot-pass,
+.no-account-text {
+  color: var(--dark-color);
+}
+
+.btn {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  opacity: 70%;
+  filter: drop-shadow(0 0 2px var(--dark-color));
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: 90%;
+}
